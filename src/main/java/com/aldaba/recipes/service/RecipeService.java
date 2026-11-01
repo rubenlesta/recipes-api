@@ -6,7 +6,9 @@ import com.aldaba.recipes.dto.RecipeResponse;
 import com.aldaba.recipes.exception.RecipeNotFoundException;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Locale;
 import java.util.Objects;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -18,12 +20,19 @@ public class RecipeService {
         this.spoonacularClient = spoonacularClient;
     }
 
+    // La clave unifica variantes del nombre; Spring solo cachea resultados exitosos, no excepciones.
+    @Cacheable(cacheNames = "recipes",
+            key = "T(com.aldaba.recipes.service.RecipeService).normalizeKey(#name)")
     public RecipeResponse findByName(String name) {
         String normalizedName = name.trim();
         SpoonacularSearchResponse.Result result = spoonacularClient
                 .findFirstByName(normalizedName)
                 .orElseThrow(() -> new RecipeNotFoundException(normalizedName));
         return toRecipeResponse(result);
+    }
+
+    public static String normalizeKey(String name) {
+        return name.trim().toLowerCase(Locale.ROOT).replaceAll("\\s+", " ");
     }
 
     private RecipeResponse toRecipeResponse(SpoonacularSearchResponse.Result result) {
