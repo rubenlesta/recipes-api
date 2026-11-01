@@ -1,5 +1,12 @@
 package com.aldaba.recipes.dto;
 
-// Contendrá nombre, tiempo, porciones, ingredientes, instrucciones e imagen.
-public record RecipeResponse() {
+import java.util.List;
+
+public record RecipeResponse(
+        String name,
+        Integer preparationTimeMinutes,
+        Integer servings,
+        List<String> ingredients,
+        List<String> instructions,
+        String imageUrl) {
 }
