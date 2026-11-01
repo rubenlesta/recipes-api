@@ -1,5 +1,8 @@
 package com.aldaba.recipes.exception;
 
-// Representará el caso en que no se encuentra una receta.
-public class RecipeNotFoundException {
+public class RecipeNotFoundException extends RuntimeException {
+
+    public RecipeNotFoundException(String name) {
+        super("No se encontró ninguna receta para: " + name);
+    }
 }
