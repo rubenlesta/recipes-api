@@ -1,5 +1,12 @@
 package com.aldaba.recipes.exception;
 
-// Representará errores al comunicarse con la API externa.
-public class ExternalApiException {
+public class ExternalApiException extends RuntimeException {
+
+    public ExternalApiException(String message) {
+        super(message);
+    }
+
+    public ExternalApiException(String message, Throwable cause) {
+        super(message, cause);
+    }
 }

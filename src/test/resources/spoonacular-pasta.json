@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": 657933,
+      "title": "Ratatouille Pasta",
+      "readyInMinutes": 45,
+      "servings": 4,
+      "image": "https://img.spoonacular.com/recipes/657933-312x231.jpg",
+      "extendedIngredients": [
+        {
+          "original": "1 large Yellow Onion, diced"
+        },
+        {
+          "original": "Olive oil for sauteing"
+        },
+        {
+          "original": "Sea salt and fresh pepper"
+        },
+        {
+          "original": "4 cloves Garlic, minced"
+        },
+        {
+          "original": "3 cups Zucchini, peeled, thinly sliced(⅛ of an inch), cut into bite size pieces"
+        },
+        {
+          "original": "3 cups Eggplant, peeled, thinly sliced(⅛ of an inch), cut into bite size pieces"
+        },
+        {
+          "original": "1 teaspoon Italian Seasoning"
+        },
+        {
+          "original": "14 ounces can of Artichokes, rinsed, chopped into bite size pieces"
+        },
+        {
+          "original": "14 ounces can Diced Tomatoes"
+        },
+        {
+          "original": "8 ounces Spaghetti (like Barila Whole Grain)"
+        },
+        {
+          "original": "Extra Virgin Olive oil, for serving"
+        },
+        {
+          "original": "Fresh grated Parmesan or Romano, for serving"
+        }
+      ],
+      "analyzedInstructions": [
+        {
+          "name": "",
+          "steps": [
+            {
+              "number": 1,
+              "step": "Saute the yellow onion in a large skillet or saute pan with enough Olive oil to coat the bottom of the pan, over medium-low heat until tender and translucent. Season with salt and pepper."
+            },
+            {
+              "number": 2,
+              "step": "Add garlic, saute until fragrant."
+            },
+            {
+              "number": 3,
+              "step": "Add another tablespoon of Olive oil and the zucchini, eggplant and Italian seasoning. Continue sauteing until the zucchini and eggplant start to break down and become limp and tender."
+            },
+            {
+              "number": 4,
+              "step": "Add the artichokes and tomatoes. Season with salt and pepper. Bring to a simmer for ten - fifteen minutes. Taste and re-season if needed."
+            },
+            {
+              "number": 5,
+              "step": "Meanwhile cook the spaghetti to al dente according to package directions."
+            },
+            {
+              "number": 6,
+              "step": "Toss with pasta and serve with a drizzle of extra-virgin Olive oil and Parmesan cheese."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "offset": 0,
+  "number": 1,
+  "totalResults": 231
+}
